@@ -1,0 +1,175 @@
+\hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver}{}\section{com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver Class Reference}
+\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver}\index{com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver@{com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver}}
+
+
+Регистрация звонков.  
+
+
+Inheritance diagram for com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a81b445370d447ac2e2594a33eac07437}{Call\+Record\+Receiver} (\hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1_call_record}{Call\+Record} call\+Record)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_aa3e89e7d92e8523a2b473a760fd52dbf}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_aa3e89e7d92e8523a2b473a760fd52dbf}} 
+static final String {\bfseries A\+C\+T\+I\+O\+N\+\_\+\+IN} = \char`\"{}android.\+intent.\+action.\+P\+H\+O\+N\+E\+\_\+\+S\+T\+A\+TE\char`\"{}
+\item 
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a7888c821496f5072c699e7db9934e9aa}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a7888c821496f5072c699e7db9934e9aa}} 
+static final String {\bfseries A\+C\+T\+I\+O\+N\+\_\+\+O\+UT} = \char`\"{}android.\+intent.\+action.\+N\+E\+W\+\_\+\+O\+U\+T\+G\+O\+I\+N\+G\+\_\+\+C\+A\+LL\char`\"{}
+\item 
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ae4f527d3dd71f59890f9d376928cb902}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ae4f527d3dd71f59890f9d376928cb902}} 
+static final String {\bfseries E\+X\+T\+R\+A\+\_\+\+P\+H\+O\+N\+E\+\_\+\+N\+U\+M\+B\+ER} = \char`\"{}android.\+intent.\+extra.\+P\+H\+O\+N\+E\+\_\+\+N\+U\+M\+B\+ER\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a221eff23b7dc251021b576b9340f625c}{on\+Incoming\+Call\+Received} (Context ctx, String number, Date start)
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ae6124f62a9e2e075c5623c36fab9df0d}{on\+Incoming\+Call\+Answered} (Context ctx, String number, Date start)
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ac3e3fc614693b39c0d4117fa8ea988ad}{on\+Incoming\+Call\+Ended} (Context ctx, String number, Date start, Date end)
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a5c093fcfd710179957bc9bf9b52b242c}{on\+Outgoing\+Call\+Started} (Context ctx, String number, Date start)
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a23ac537f3d22cf22d27b76d2c8b3d2bd}{on\+Outgoing\+Call\+Ended} (Context ctx, String number, Date start, Date end)
+\item 
+void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a602be22f458570452b057d74d5c8b0c6}{on\+Missed\+Call} (Context ctx, String number, Date start)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Регистрация звонков. 
+
+\begin{DoxyAuthor}{Author}
+Wonder\+Worcer 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+7 марта 2017 года
+\end{DoxyDate}
+Класс, необходим для обработки всех возможных событий при регистрации вызовов 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a81b445370d447ac2e2594a33eac07437}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a81b445370d447ac2e2594a33eac07437}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!Call\+Record\+Receiver@{Call\+Record\+Receiver}}
+\index{Call\+Record\+Receiver@{Call\+Record\+Receiver}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{Call\+Record\+Receiver()}{CallRecordReceiver()}}
+{\footnotesize\ttfamily com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+Call\+Record\+Receiver (\begin{DoxyParamCaption}\item[{\hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1_call_record}{Call\+Record}}]{call\+Record }\end{DoxyParamCaption})}
+
+Конструктор 
+\begin{DoxyParams}{Parameters}
+{\em call\+Record} & \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ae6124f62a9e2e075c5623c36fab9df0d}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ae6124f62a9e2e075c5623c36fab9df0d}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Incoming\+Call\+Answered@{on\+Incoming\+Call\+Answered}}
+\index{on\+Incoming\+Call\+Answered@{on\+Incoming\+Call\+Answered}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Incoming\+Call\+Answered()}{onIncomingCallAnswered()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Incoming\+Call\+Answered (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Вызывается при приеме входящего вызова с последующим стартом записи разговора, если такой режим включен 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ac3e3fc614693b39c0d4117fa8ea988ad}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_ac3e3fc614693b39c0d4117fa8ea988ad}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Incoming\+Call\+Ended@{on\+Incoming\+Call\+Ended}}
+\index{on\+Incoming\+Call\+Ended@{on\+Incoming\+Call\+Ended}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Incoming\+Call\+Ended()}{onIncomingCallEnded()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Incoming\+Call\+Ended (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start,  }\item[{Date}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Вызывается после окончания входящего вызова, необходим для остановки записи. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова \\
+\hline
+{\em end} & время окончания вызова \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a221eff23b7dc251021b576b9340f625c}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a221eff23b7dc251021b576b9340f625c}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Incoming\+Call\+Received@{on\+Incoming\+Call\+Received}}
+\index{on\+Incoming\+Call\+Received@{on\+Incoming\+Call\+Received}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Incoming\+Call\+Received()}{onIncomingCallReceived()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Incoming\+Call\+Received (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Вызывается при принятии входящего вызова На данный момент не работает 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова На данный момент не работает \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a602be22f458570452b057d74d5c8b0c6}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a602be22f458570452b057d74d5c8b0c6}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Missed\+Call@{on\+Missed\+Call}}
+\index{on\+Missed\+Call@{on\+Missed\+Call}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Missed\+Call()}{onMissedCall()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Missed\+Call (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Возникает при пропуске звонка На данный момент не работает 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a23ac537f3d22cf22d27b76d2c8b3d2bd}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a23ac537f3d22cf22d27b76d2c8b3d2bd}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Outgoing\+Call\+Ended@{on\+Outgoing\+Call\+Ended}}
+\index{on\+Outgoing\+Call\+Ended@{on\+Outgoing\+Call\+Ended}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Outgoing\+Call\+Ended()}{onOutgoingCallEnded()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Outgoing\+Call\+Ended (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start,  }\item[{Date}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Вызывается после окончания исходящего вызова, необходим для остановки записи. 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова \\
+\hline
+{\em end} & время окончания вызова \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a5c093fcfd710179957bc9bf9b52b242c}\label{classcom_1_1aykuttasil_1_1callrecord_1_1receiver_1_1_call_record_receiver_a5c093fcfd710179957bc9bf9b52b242c}} 
+\index{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}!on\+Outgoing\+Call\+Started@{on\+Outgoing\+Call\+Started}}
+\index{on\+Outgoing\+Call\+Started@{on\+Outgoing\+Call\+Started}!com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver@{com\+::aykuttasil\+::callrecord\+::receiver\+::\+Call\+Record\+Receiver}}
+\subsubsection{\texorpdfstring{on\+Outgoing\+Call\+Started()}{onOutgoingCallStarted()}}
+{\footnotesize\ttfamily void com.\+aykuttasil.\+callrecord.\+receiver.\+Call\+Record\+Receiver.\+on\+Outgoing\+Call\+Started (\begin{DoxyParamCaption}\item[{Context}]{ctx,  }\item[{String}]{number,  }\item[{Date}]{start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Вызывается при приеме исходящего вызова с последующим стартом записи разговора, если такой режим включен 
+\begin{DoxyParams}{Parameters}
+{\em ctx} & контект приложения \\
+\hline
+{\em number} & номер телефона \\
+\hline
+{\em start} & время принятия вызова \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Diplomov/\+Call\+Recorder/callrecord/src/main/java/com/aykuttasil/callrecord/receiver/Call\+Record\+Receiver.\+java\end{DoxyCompactItemize}

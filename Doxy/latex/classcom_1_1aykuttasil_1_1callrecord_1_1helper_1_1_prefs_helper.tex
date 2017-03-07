@@ -1,0 +1,222 @@
+\hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper}{}\section{com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper Class Reference}
+\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper}\index{com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper@{com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper}}
+
+
+Регистрация звонков.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ab49562720e21438e0e886cbcdf955d50}{Prefs\+Helper} (Context context, String pref\+\_\+name)
+\item 
+\hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af2af1e665783a6b36b6668899e64d4c5}{Prefs\+Helper} (Context context)
+\item 
+Shared\+Preferences \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ad14e4ad705aa0f59f69c9365cbfab004}{get\+Preference} ()
+\item 
+Shared\+Preferences.\+Editor \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a909e1c90c5a4972cdca679b39bb1badb}{get\+Pref\+Editor} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Shared\+Preferences \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a76641fc5715d4412e827c933192671a8}{get\+Default\+Preference} (Context context)
+\item 
+static void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a3cf23eb8e76213d5155fee0367406d59}{write\+Pref\+String} (Context context, String key, String value)
+\item 
+static String \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ae19f5a277e32ab8af94ddf6483638055}{read\+Pref\+String} (Context context, String key)
+\item 
+static void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a2fbd2a41d2ba031c9e1f0031364a970b}{write\+Pref\+Int} (Context context, String key, int value)
+\item 
+static int \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af5d55ee9a54f2d21b1d46b48c58653a3}{read\+Pref\+Int} (Context context, String key)
+\item 
+static void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a150a57350ee1b4ba0f3d4c03cecc52b3}{write\+Pref\+Bool} (Context context, String key, boolean value)
+\item 
+static boolean \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a8c9acf31069d845c987e1f1dfe5b6e40}{read\+Pref\+Bool} (Context context, String key)
+\item 
+static void \hyperlink{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a96d6039f112bd5e5f945c30566019084}{clear\+Preference} (Context context)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Регистрация звонков. 
+
+\begin{DoxyAuthor}{Author}
+Wonder\+Worcer 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+5 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+7 марта 2017 года
+\end{DoxyDate}
+Класс, необходим для записи настроек пользователя в контекст и изменения самим приложением контекста 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ab49562720e21438e0e886cbcdf955d50}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ab49562720e21438e0e886cbcdf955d50}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!Prefs\+Helper@{Prefs\+Helper}}
+\index{Prefs\+Helper@{Prefs\+Helper}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{Prefs\+Helper()}{PrefsHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+Prefs\+Helper (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{pref\+\_\+name }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em pref\+\_\+name} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af2af1e665783a6b36b6668899e64d4c5}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af2af1e665783a6b36b6668899e64d4c5}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!Prefs\+Helper@{Prefs\+Helper}}
+\index{Prefs\+Helper@{Prefs\+Helper}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{Prefs\+Helper()}{PrefsHelper()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+Prefs\+Helper (\begin{DoxyParamCaption}\item[{Context}]{context }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a96d6039f112bd5e5f945c30566019084}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a96d6039f112bd5e5f945c30566019084}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!clear\+Preference@{clear\+Preference}}
+\index{clear\+Preference@{clear\+Preference}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{clear\+Preference()}{clearPreference()}}
+{\footnotesize\ttfamily static void com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+clear\+Preference (\begin{DoxyParamCaption}\item[{Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Отчищает контекст от пользовательских настроек 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a76641fc5715d4412e827c933192671a8}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a76641fc5715d4412e827c933192671a8}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!get\+Default\+Preference@{get\+Default\+Preference}}
+\index{get\+Default\+Preference@{get\+Default\+Preference}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{get\+Default\+Preference()}{getDefaultPreference()}}
+{\footnotesize\ttfamily static Shared\+Preferences com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+get\+Default\+Preference (\begin{DoxyParamCaption}\item[{Context}]{context }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a909e1c90c5a4972cdca679b39bb1badb}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a909e1c90c5a4972cdca679b39bb1badb}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!get\+Pref\+Editor@{get\+Pref\+Editor}}
+\index{get\+Pref\+Editor@{get\+Pref\+Editor}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{get\+Pref\+Editor()}{getPrefEditor()}}
+{\footnotesize\ttfamily Shared\+Preferences.\+Editor com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+get\+Pref\+Editor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Необходим для получения объекта, содержащего общие настройки контекста \begin{DoxyReturn}{Returns}
+объект, сожержащий настройки контекста 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ad14e4ad705aa0f59f69c9365cbfab004}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ad14e4ad705aa0f59f69c9365cbfab004}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!get\+Preference@{get\+Preference}}
+\index{get\+Preference@{get\+Preference}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{get\+Preference()}{getPreference()}}
+{\footnotesize\ttfamily Shared\+Preferences com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+get\+Preference (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Необходим для получения настроек контекста \begin{DoxyReturn}{Returns}
+объект, содержащий настройки текущего контекста приложения 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a8c9acf31069d845c987e1f1dfe5b6e40}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a8c9acf31069d845c987e1f1dfe5b6e40}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!read\+Pref\+Bool@{read\+Pref\+Bool}}
+\index{read\+Pref\+Bool@{read\+Pref\+Bool}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{read\+Pref\+Bool()}{readPrefBool()}}
+{\footnotesize\ttfamily static boolean com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+read\+Pref\+Bool (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Получает логическое значение переданного параметра из контекста 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af5d55ee9a54f2d21b1d46b48c58653a3}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_af5d55ee9a54f2d21b1d46b48c58653a3}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!read\+Pref\+Int@{read\+Pref\+Int}}
+\index{read\+Pref\+Int@{read\+Pref\+Int}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{read\+Pref\+Int()}{readPrefInt()}}
+{\footnotesize\ttfamily static int com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+read\+Pref\+Int (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Получает целочисленное значение переданного параметра из контекста 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & название параметра \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ae19f5a277e32ab8af94ddf6483638055}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_ae19f5a277e32ab8af94ddf6483638055}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!read\+Pref\+String@{read\+Pref\+String}}
+\index{read\+Pref\+String@{read\+Pref\+String}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{read\+Pref\+String()}{readPrefString()}}
+{\footnotesize\ttfamily static String com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+read\+Pref\+String (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Получает значение переданного параметра из контекта 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & название параметра \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a150a57350ee1b4ba0f3d4c03cecc52b3}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a150a57350ee1b4ba0f3d4c03cecc52b3}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!write\+Pref\+Bool@{write\+Pref\+Bool}}
+\index{write\+Pref\+Bool@{write\+Pref\+Bool}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{write\+Pref\+Bool()}{writePrefBool()}}
+{\footnotesize\ttfamily static void com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+write\+Pref\+Bool (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key,  }\item[{boolean}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Записывает логическое значение переданного параметра в контекст 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & название параметра \\
+\hline
+{\em value} & значение параметра \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a2fbd2a41d2ba031c9e1f0031364a970b}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a2fbd2a41d2ba031c9e1f0031364a970b}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!write\+Pref\+Int@{write\+Pref\+Int}}
+\index{write\+Pref\+Int@{write\+Pref\+Int}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{write\+Pref\+Int()}{writePrefInt()}}
+{\footnotesize\ttfamily static void com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+write\+Pref\+Int (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Записывает целочисленное значение переданного параметра в контекст 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & название параметра \\
+\hline
+{\em value} & значение параметра \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a3cf23eb8e76213d5155fee0367406d59}\label{classcom_1_1aykuttasil_1_1callrecord_1_1helper_1_1_prefs_helper_a3cf23eb8e76213d5155fee0367406d59}} 
+\index{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}!write\+Pref\+String@{write\+Pref\+String}}
+\index{write\+Pref\+String@{write\+Pref\+String}!com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper@{com\+::aykuttasil\+::callrecord\+::helper\+::\+Prefs\+Helper}}
+\subsubsection{\texorpdfstring{write\+Pref\+String()}{writePrefString()}}
+{\footnotesize\ttfamily static void com.\+aykuttasil.\+callrecord.\+helper.\+Prefs\+Helper.\+write\+Pref\+String (\begin{DoxyParamCaption}\item[{Context}]{context,  }\item[{String}]{key,  }\item[{String}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Записывает строковое значение переданного параметра в контект 
+\begin{DoxyParams}{Parameters}
+{\em context} & текущий контект приложения \\
+\hline
+{\em key} & название параметра \\
+\hline
+{\em value} & значение параметра \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+D\+:/\+Diplomov/\+Call\+Recorder/callrecord/src/main/java/com/aykuttasil/callrecord/helper/Prefs\+Helper.\+java\end{DoxyCompactItemize}
