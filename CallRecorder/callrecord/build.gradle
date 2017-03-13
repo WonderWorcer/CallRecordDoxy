@@ -18,6 +18,10 @@ android {
     compileSdkVersion project.sdk
     buildToolsVersion project.buildTools
 
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
     defaultConfig {
         minSdkVersion project.minSdk
         targetSdkVersion project.sdk

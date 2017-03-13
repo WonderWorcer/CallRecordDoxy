@@ -16,7 +16,7 @@ import com.aykuttasil.callrecord.service.CallRecordService;
  * \author WonderWorcer
  * \version 0.5
  * \date 7 марта 2017 года
- *
+ * <p>
  * Класс, реализующий регистрацию звонков
  */
 
@@ -46,6 +46,7 @@ public class CallRecord {
     /**
      * Коструктор
      * Присваивает текущий котекст
+     *
      * @param context текущий контекст приложения
      */
     private CallRecord(Context context) {
@@ -55,6 +56,7 @@ public class CallRecord {
     /**
      * Необходим для инициализации ресивера
      * В данный момент не используется
+     *
      * @param context текущий контекст приложения
      * @return Возвращает
      */
@@ -70,6 +72,7 @@ public class CallRecord {
     /**
      * Необходим для инициализации сервиса записи разговора
      * В данный момент не используется
+     *
      * @param context текущий контекст приложения
      * @return объект, реализующий регистрацию вызовов, с присвоенныны
      * ему значениями контекста
@@ -149,6 +152,7 @@ public class CallRecord {
 
     /**
      * Необходим для полчения состояния сохранения файлов
+     *
      * @return возвращает true - если файлы сохраняются, false - не сохраняются
      */
     public boolean getStateSaveFile() {
@@ -157,29 +161,24 @@ public class CallRecord {
 
     /**
      * Необходим для смены имени записываемого файла
+     *
      * @param newFileName новое имя файла
      */
-    public void changeRecordFileName(String newFileName) {
+    public void changeRecordFileName(String newFileName) throws Exception {
 
-        if (newFileName == null || newFileName.isEmpty()) {
-
-            try {
-                throw new Exception("newFileName can not be empty or null");
-            } catch (Exception e) {
-                e.printStackTrace();
-                return;
-            }
-        }
+        if (newFileName == null || newFileName.isEmpty())
+            throw new Exception("newFileName can not be empty or null");
 
         PrefsHelper.writePrefString(mContext, PREF_FILE_NAME, newFileName);
-
         Log.i("CallRecord", "New file name: " + newFileName);
     }
 
     /**
      * Необходим для получение имени записываемого файла
+     *
      * @return возвращает имя записываемого файла
      */
+
     public String getRecordFileName() {
 
         return PrefsHelper.readPrefString(mContext, PREF_FILE_NAME);
@@ -187,19 +186,14 @@ public class CallRecord {
 
     /**
      * Необходим для смены директории сохранения файлов
+     *
      * @param newDirName - новое имя директории
      */
-    public void changeRecordDirName(String newDirName) {
+    public void changeRecordDirName(String newDirName) throws Exception {
 
-        if (newDirName == null || newDirName.isEmpty()) {
+        if (newDirName == null || newDirName.isEmpty())
+            throw new Exception("newDirName can not be empty or null");
 
-            try {
-                throw new Exception("newDirName can not be empty or null");
-            } catch (Exception e) {
-                e.printStackTrace();
-                return;
-            }
-        }
 
         PrefsHelper.writePrefString(mContext, PREF_DIR_NAME, newDirName);
 
@@ -208,6 +202,7 @@ public class CallRecord {
 
     /**
      * Необходим для получения имени директории сохранения файлов
+     *
      * @return возвращает имя директории
      */
     public String getRecordDirName() {
@@ -217,29 +212,24 @@ public class CallRecord {
 
     /**
      * Необходим для изменения директории хранения новых файлов
+     *
      * @param newDirPath новый путь
      */
-    public void changeRecordDirPath(String newDirPath) {
+    public void changeRecordDirPath(String newDirPath) throws Exception {
 
-        if (newDirPath == null || newDirPath.isEmpty()) {
-
-            try {
-                throw new Exception("newDirPath can not be empty or null");
-            } catch (Exception e) {
-                e.printStackTrace();
-                return;
-            }
-        }
+        if (newDirPath == null || newDirPath.isEmpty())
+            throw new Exception("newDirPath can not be empty or null");
 
         PrefsHelper.writePrefString(mContext, PREF_DIR_PATH, newDirPath);
-
         Log.i("CallRecord", "New dir path: " + newDirPath);
     }
 
     /**
      * Необходим для определения директории хранения файлов
+     *
      * @return путь для хранения файлов
      */
+
     public String getRecordDirPath() {
 
         return PrefsHelper.readPrefString(mContext, PREF_DIR_PATH);
@@ -247,9 +237,10 @@ public class CallRecord {
 
     /**
      * Необходим для смены способа записи файлов
+     *
      * @param receiver объект, наследник BroadcastReceiver,
-     * необходим для реализации всевозможных событий,
-     * возникающих во время разговора
+     *                 необходим для реализации всевозможных событий,
+     *                 возникающих во время разговора
      */
     public void changeReceiver(CallRecordReceiver receiver) {
         mCallRecordReceiver = receiver;
@@ -266,6 +257,7 @@ public class CallRecord {
         /**
          * Инициализирует всевозможные функции приложения,
          * записывает все данные в контект приложения
+         *
          * @param context Текущий контекст приложения
          */
         public Builder(Context context) {
@@ -285,6 +277,7 @@ public class CallRecord {
 
         /**
          * Необходим для сборки объекта CallRecord
+         *
          * @return объект класса, реализующий регистрацию вызовов
          */
         public CallRecord build() {
@@ -298,6 +291,7 @@ public class CallRecord {
 
         /**
          * Необходим для задания имени записанного файла
+         *
          * @param recordFileName название файла
          * @return экземляр билдера
          */
@@ -309,9 +303,9 @@ public class CallRecord {
         }
 
 
-
         /**
          * необходим для задания имени директории хранения файла
+         *
          * @param recordDirName Имя директории
          * @return экземляр билдера
          */
@@ -323,9 +317,9 @@ public class CallRecord {
         }
 
 
-
         /**
          * Необходим для получения источника записи
+         *
          * @return параметр, характеризующий источник записи
          * 0 - по умолчанию
          * 1 - микрофон
@@ -344,16 +338,17 @@ public class CallRecord {
 
         /**
          * Необходим для задания способа записи разговора
+         *
          * @param audioSource - источник записи
-         * 0 - по умолчанию
-         * 1 - микрофон
-         * 2 - UPLINK
-         * 3 - DOWNLINK
-         * 4 - разговор
-         * 5 - микрофон с камеры, если нету такого, используется обычный микрофон
-         * 7 - VoIp, эхоподавляющий, автоматически усиливающий.
-         * 8 - Субмикс аудиопоток
-         * 9 - сырой звук(работает так же как и по умолчанию)
+         *                    0 - по умолчанию
+         *                    1 - микрофон
+         *                    2 - UPLINK
+         *                    3 - DOWNLINK
+         *                    4 - разговор
+         *                    5 - микрофон с камеры, если нету такого, используется обычный микрофон
+         *                    7 - VoIp, эхоподавляющий, автоматически усиливающий.
+         *                    8 - Субмикс аудиопоток
+         *                    9 - сырой звук(работает так же как и по умолчанию)
          * @return экземляр билдера
          */
         public Builder setAudioSource(int audioSource) {
@@ -372,6 +367,7 @@ public class CallRecord {
          * 4 - AMR WB
          * 6 - AAC ADTS
          * 9 - VP8/VORBIS
+         *
          * @return параметр, характеризующий кодек файла
          */
         public int getAudioEncoder() {
@@ -381,14 +377,15 @@ public class CallRecord {
 
         /**
          * Необходим для задания кодека файла
+         *
          * @param audioEncoder номер кодека
-         * 0 - по умолчанию
-         * 1- 3GPP
-         * 2- MPEG4
-         * 3- AMR NB
-         * 4 - AMR WB
-         * 6 - AAC ADTS
-         * 9 - VP8/VORBIS
+         *                     0 - по умолчанию
+         *                     1- 3GPP
+         *                     2- MPEG4
+         *                     3- AMR NB
+         *                     4 - AMR WB
+         *                     6 - AAC ADTS
+         *                     9 - VP8/VORBIS
          * @return экземляр билдера
          */
         public Builder setAudioEncoder(int audioEncoder) {
@@ -407,6 +404,7 @@ public class CallRecord {
          * 4 - AMR WB
          * 6 - AAC ADTS
          * 9 - VP8/VORBIS
+         *
          * @return номер, характеризующий формат файла
          */
         public int getOutputFormat() {
@@ -416,14 +414,15 @@ public class CallRecord {
 
         /**
          * необходим для задания формата сохраняемого файла
+         *
          * @param outputFormat номер формата сохраняемого файла
-         * 0 - по умолчанию
-         * 1 - 3GPP
-         * 2 - MPEG4
-         * 3 - AMR NB
-         * 4 - AMR WB
-         * 6 - AAC ADTS
-         * 9 - VP8/VORBIS
+         *                     0 - по умолчанию
+         *                     1 - 3GPP
+         *                     2 - MPEG4
+         *                     3 - AMR NB
+         *                     4 - AMR WB
+         *                     6 - AAC ADTS
+         *                     9 - VP8/VORBIS
          * @return экземляр билдера
          */
         public Builder setOutputFormat(int outputFormat) {
@@ -435,6 +434,7 @@ public class CallRecord {
 
         /**
          * Проверяет неведомый параметр
+         *
          * @return не понятно что
          */
         public boolean isShowSeed() {
@@ -444,6 +444,7 @@ public class CallRecord {
 
         /**
          * Не имею понятия что делает функция
+         *
          * @param showSeed неведомый параметр имеющий значение true и false
          * @return экземляр билдера
          */
@@ -457,6 +458,7 @@ public class CallRecord {
 
         /**
          * Необходим для проверки показывается ли номер телефона
+         *
          * @return true - номер показыватся, false - не показывается
          */
         public boolean isShowPhoneNumber() {
@@ -466,6 +468,7 @@ public class CallRecord {
 
         /**
          * Необходим для показа номера телефона
+         *
          * @param showNumber true - включить, false - выключить
          * @return экземляр билдера
          */
@@ -479,6 +482,7 @@ public class CallRecord {
 
         /**
          * необходим для задания пули хранения файла
+         *
          * @param recordDirPath путь , куда будет сохранен файл
          * @return экземляр билдера
          */
